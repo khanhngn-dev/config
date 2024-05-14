@@ -65,6 +65,7 @@ The `pre-commit.sh` hook can be used with any githooks implementation. This exam
 
 - Run format with Prettier on staged files `yarn format`
 - Add them to the commit using `git add .`
+- (Optional) Run lint with ESLint on staged files `yarn lint`
 
 ### How to use husky with pre-commit
 
@@ -85,7 +86,6 @@ Add the following to the `package.json`:
 ```json
 {
   "scripts": {
-    // Other scripts here
     "prepare": "husky",
     "format": "prettier --write . --config ./.prettierrc"
   }
