@@ -2,9 +2,9 @@
 
 These configs are shared across all projects. They include:
 
-- `.prettierrc`
-- `.gitignore`
-- `.editorconfig`
+- .prettierrc
+- .gitignore
+- .editorconfig
 
 ## [Prettier](https://prettier.io/)
 
