@@ -24,14 +24,14 @@ Current order of imports:
 
 ```javascript
 // 3rd party
-import React from 'react';
-import { render } from 'react-dom';
+import React from "react";
+import { render } from "react-dom";
 
 // Path aliases
-import App from '@/App';
+import App from "@/App";
 
 // Relatives
-import './index.css';
+import "./index.css";
 ```
 
 ### How to use prettier config
