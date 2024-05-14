@@ -1,12 +1,8 @@
 # Share configs
 
-These configs are shared across all projects. They include:
+These configs are shared across all projects.
 
-- .prettierrc
-- .gitignore
-- .editorconfig
-
-## [Prettier](https://prettier.io/)
+## [.prettierrc](https://prettier.io/)
 
 Standard configuration for code formatting.
 
@@ -36,4 +32,62 @@ import App from '@/App';
 
 // Relatives
 import './index.css';
+```
+
+### How to use prettier config
+
+- Copy the `.prettierrc` file to the root of the project
+- Install the required dependencies
+- Start coding!
+
+## [.gitignore](https://git-scm.com/docs/gitignore)
+
+Standard configuration for files and directories to be ignored by Git.
+
+Including but not limited to:
+
+- `node_modules`
+- `.DS_Store`
+- `.env*.local`
+- All build directories (`dist`, `build`, `out`, `.next`, etc.)
+
+## [.editorconfig](https://editorconfig.org/)
+
+Standard configuration for code editors. Including recommended extensions for VSCode.
+
+## [pre-commit](https://pre-commit.com/)
+
+Configuration for pre-commit hooks that runs before each commit. Can be used to run tests, linting, formatting, etc.
+
+The `pre-commit.sh` hook can be used with any githooks implementation. This example uses [husky](https://typicode.github.io/husky/).
+
+### Current config
+
+- Run format with Prettier on staged files `yarn format`
+- Add them to the commit using `git add .`
+
+### How to use husky with pre-commit
+
+The `husky` package must be installed as `devDependencies` in the project.
+
+```bash
+npm install --save-dev husky
+```
+
+OR
+
+```bash
+yarn add --dev husky
+```
+
+Add the following to the `package.json`:
+
+```json
+{
+  "scripts": {
+    // Other scripts here
+    "prepare": "husky",
+    "format": "prettier --write . --config ./.prettierrc"
+  }
+}
 ```
