@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowJs": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "target": "es6",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["ES2021.String"],
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ] /* List of folders to include type definitions from. */
+  },
+  "include": [
+    "**/*.ts" /* Include every ts file in source folder */,
+    "**/*.d.ts" /* Include every d.ts file in source folder */,
+    "**/*.yml",
+    "migrate.js",
+    "src"
+  ],
+  "exclude": ["node_modules", "**/*_test.ts"]
+}
