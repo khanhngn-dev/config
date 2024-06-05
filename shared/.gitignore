@@ -9,9 +9,13 @@
 # testing
 /coverage
 
-# production
-/build
-/dist
+# build
+build
+dist
+
+# next.js
+.next
+out
 
 # editors
 .vscode/*
