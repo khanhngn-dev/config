@@ -82,6 +82,7 @@ yarn add --dev husky
 ```
 
 Init husky
+
 ```
 yarn husky init
 ```
