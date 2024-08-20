@@ -81,6 +81,11 @@ OR
 yarn add --dev husky
 ```
 
+Init husky
+```
+yarn husky init
+```
+
 Add the following to the `package.json`:
 
 ```json
